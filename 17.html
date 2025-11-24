@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let sodien = parseInt(prompt("Nhập số điện:"));
+    let gia = 0;
+    if (sodien <= 50) {
+        gia = sodien * 1984;
+    } else if (sodien <= 100) {
+        gia = 50 * 1984 + (sodien -
+                50
+            ) *
+            2050;
+    } else if (sodien <= 200) {
+        gia = 50 * 1984 + 100 * 2050 + (sodien -
+                100
+            ) *
+            2380;
+    } else if (sodien <= 300) {
+        gia = 50 * 1984 + 100 * 2050 + 200 * 2380 + (sodien -
+                300
+            ) *
+            2998;
+    } else if (sodien <= 400) {
+        gia = 50 * 1984 + 100 * 2050 + 200 * 2380 + 300 * 2998 + (sodien -
+                400
+            ) *
+            3350;
+    } else if (sodien >= 500) {
+        gia = 50 * 1984 + 100 * 2050 + 200 * 2380 + 300 * 2998 + 400 * 3350 + (sodien -
+                400
+            ) *
+            3460
+    }
+    document.write("Tổng tiền điện phải trả:" + gia.toLocaleString() + "VND");
+</script>
 </body>
 </html>

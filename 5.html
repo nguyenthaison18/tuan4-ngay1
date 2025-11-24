@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Xếp loại học lực</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseInt(prompt("Điểm kiểm tra:"));
+    let b = parseInt(prompt("Điểm giữa kì:"));
+    let c = parseInt(prompt("Điểm cuối kì:"));
+
+    let tb = (a * 0.3) + (b * 0.3) + (c * 0.4);
+
+    if (tb >= 8) {
+        document.write("Xếp loại giỏi");
+    } else if (tb >= 6.5) {
+        document.write("Xếp loại khá");
+    } else if (tb >= 5) {
+        document.write("Xếp loại trung bình");
+    } else {
+        document.write("Xếp loại yếu");
+    }
+</script>
 </body>
 </html>

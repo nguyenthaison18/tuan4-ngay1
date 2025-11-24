@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let doanhso = parseInt(prompt("Nhập doanh số:"));
+    let hoahong = 0;
+    if (doanhso < 5000000)
+    {
+        hoahong = doanhso * 0.03
+    }
+    else
+    if (doanhso < 10000000)
+    {
+        hoahong = doanhso * 0.05
+    }
+    else
+    {
+        hoahong = doanhso * 0.10
+    }
+    document.write("Doanh số:" + doanhso.toLocaleString("VND") + "<br>");
+    document.write("Hoa hồng nhận được:" + hoahong.toLocaleString("VND"));
+
+</script>
 </body>
 </html>

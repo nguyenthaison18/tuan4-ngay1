@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseInt(prompt("Tổng phút gọi 1 tháng"));
+    let b = " ";
+    let min1p = 1200;
+    let cuoccall = a * min1p;
+    document.write("Tổng số phút gọi: " + a + b + "Phút" + "<br>");
+    document.write("Số tiền phải trả: " + cuoccall.toLocaleString("vi-VN") + " VND");
+</script>
 </body>
 </html>

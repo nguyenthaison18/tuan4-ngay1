@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseFloat(prompt("Nhập số a"));
+    let c = " ";
+    let b = parseFloat(prompt("Nhập số b "));
+    let d = " ";
+    if (a === b) {
+        document.write("Không thể chia  hết cho 0");
+    } else if (a % b === 0) {
+        document.write( a + c + "Chia hết cho:" + d + b );
+    } else {
+        document.write( a + c + "Không chia hết cho:" + b + d );
+    }
+</script>
 </body>
 </html>

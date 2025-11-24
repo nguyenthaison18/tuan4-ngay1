@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let tuoi = parseInt(prompt("Nhập tuổi:"));
+    if (Number.isInteger(tuoi) && tuoi > 0 && tuoi < 120) {
+        document.write("Đây là tuổi hợp lệ");
+    } else {
+        document.write("Đây là tuổi của một người:");
+    }
+</script>
 </body>
 </html>

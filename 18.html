@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tính tiền điện</title>
 </head>
 <body>
-$END$
+<script>
+    let thunhap = parseInt(prompt("Thu nhập của bạn:"));
+    let vat = 0;
+    if (thunhap <= 5000000) {
+        vat = thunhap * 0.05;
+    } else if (thunhap <= 10000000) {
+        vat = thunhap * 0.10;
+    } else if (thunhap <= 18000000) {
+        vat = thunhap * 0.15
+    } else if (thunhap <= 32000000) {
+        vat = thunhap * 0.20
+    } else if (thunhap <= 52000000) {
+        vat = thunhap * 0.25
+    } else if (thunhap <= 80000000) {
+        vat = thunhap * 0.30
+    } else if (thunhap > 80000000) {
+        vat = thunhap * 0.35
+    }
+    document.write("Tổng thu nhập: " + vat.toLocaleString() + " VND");
+</script>
 </body>
 </html>

@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
 </head>
 <body>
-$END$
+<script>
+    let tiengui = parseFloat(prompt("Số tiền gửi:"));
+    let sothang = parseInt(prompt("Số tháng gửi:"));
+    let laixuat = parseFloat(prompt("Lãi suất hàng tháng (%):")) / 100;
+
+    let tongtien = tiengui * Math.pow(1 + laixuat, sothang);
+
+    document.write("Tổng tiền nhận được: " + tongtien.toLocaleString() + " VND");
+</script>
 </body>
 </html>
